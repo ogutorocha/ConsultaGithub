@@ -39,7 +39,6 @@ input {
     background: #e0e0e0;
     box-shadow:  20px 20px 60px #bebebe,
                 -20px -20px 60px #ffffff;
-    min-width: 80vh;
     width: auto;
     height: auto;
     
