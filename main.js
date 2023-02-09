@@ -31,8 +31,8 @@ function procuraGit(){
         let infopic = document.getElementById('photo')
 
         infonome.innerHTML = data.name
-        infologin.innerHTML = data.login
-        infoloc.innerHTML = data.location
+        infologin.innerHTML = `Usuário: ${data.login}`
+        infoloc.innerHTML = `Localização: ${data.location}`
         infopic.innerHTML = `<img src="${data.avatar_url}" width="250px">`
           
         
