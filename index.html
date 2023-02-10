@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Consulta de Github</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div id="header">
-    
-        <div id="busca">
-            <input id="user" type="text" required autocomplete="off" placeholder="Digite o nome de Usuário Github">
-            <p id="notf">Insira um usuário antes de continuar</p>
+      <div id="busca">
+        <input
+          id="user"
+          type="text"
+          required
+          autocomplete="off"
+          placeholder="Digite o nome de Usuário Github"
+        />
+        <p id="notf">Insira um usuário antes de continuar</p>
+      </div>
+
+      <div id="box">
+        <div id="resultado">
+          <div id="pic">
+            <p id="photo"></p>
+          </div>
+          <div id="dados">
+            <strong><p id="name"></p></strong>
+            <p id="login"></p>
+            <p id="location"></p>
+
+            <p style="margin-top: 30px">Projetos:</p>
+            <p id="repo"></p>
+          </div>
         </div>
-
-        <div id="box">
-            <div id="resultado">
-                <div id="pic">
-                    <p id="photo"></p>
-                </div>
-                <div id="dados">
-                    
-                        <strong><p id="name"></p></strong>
-                        <p id="login"></p>
-                        <p id="location"></p>
-                    
-
-                        <p style="margin-top: 30px;">Projetos:</p>
-                        <p id="repo"></p>
-                        
-
-                </div>
-            </div>
-        </div>
-            <div id="coded" style="text-align: center; margin:20px; font-size: 12px;">
-                codado com <span style='color: red;'>♥</span> por Carlos Rocha - 2023
-            </div>
-         
+      </div>
+      <div id="coded" style="text-align: center; margin: 20px; font-size: 12px">
+        codado com <span style="color: red">♥</span> por Carlos Rocha - 2023
+      </div>
     </div>
-    <script src="main.js"> </script>
-    
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
