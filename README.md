@@ -8,4 +8,4 @@ Foi corrigida questão de retorno 'undefined' quando um usuário não era encont
 Adicionado logo para facilitar identificação do usuário com o projeto.
 
 release 0.1 (main)
-Existe ainda alguns itens que serão melhorados com o tempo como o problema de ainda não ter nenhum retorno para usuários não existentes, mas envolve métodos ainda meio obscuros para mim(rsrs).
+Existe ainda alguns itens que serão melhorados com o tempo como o problema de ainda não ter nenhum retorno para usuários não existentes, mas envolve métodos ainda meio obscuros para mim(rsrs).release
