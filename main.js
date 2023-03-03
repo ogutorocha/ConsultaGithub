@@ -8,26 +8,35 @@ document.addEventListener("keyup", function (event) {
     }
   } else {
     document.getElementById("notf").style.setProperty("display", "block");
+    
   }
 });
-console.log(data);
+
 function procuraGit() {
-  //alert('Ok')
+  
   let user = document.getElementById("user").value;
   let urlinfo = `https://api.github.com/users/${user}`;
 
   document.getElementById("box").style.setProperty("display", "block");
+  document.getElementById("notfound").style.setProperty("display", "none");
 
   fetch(urlinfo)
     .then(function (response) {
-      return response.json();
+
+      if (response.ok) {
+        
+        return response.json()
+      } else if(response.status === 404) {
+        document.getElementById("box").style.setProperty("display", "none");
+        document.getElementById("notfound").style.setProperty("display", "block");
+      }
     })
     .then(function (data) {
       let infonome = document.getElementById("name");
       let infologin = document.getElementById("login");
       let infoloc = document.getElementById("location");
       let infopic = document.getElementById("photo");
-
+      
       infonome.innerHTML = data.name;
       infologin.innerHTML = `Usuário: ${data.login}`;
       infoloc.innerHTML = `Localização: ${data.location}`;
@@ -61,4 +70,6 @@ function limpaInput() {
 
 function limpaRepo() {
   document.getElementById("repo").innerHTML = ``;
+  
+  
 }

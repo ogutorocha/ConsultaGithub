@@ -9,8 +9,17 @@ body {
   margin: 0;
 }
 
+#header {
+  text-align: center;
+  
+}
+
 #busca {
   text-align: center;
+}
+
+#imglogo {
+  padding-bottom: 10px;
 }
 
 input {
@@ -79,6 +88,12 @@ a:hover {
 }
 
 #notf {
+  display: none;
+  color: red;
+  font-size: 12px;
+}
+
+#notfound {
   display: none;
   color: red;
   font-size: 12px;
